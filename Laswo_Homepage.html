@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laswo Studios</title>
+    <link rel="stylesheet" href="Laswo_style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="/home/jlong/Pictures/snaps/WhatsApp Image 2024-09-20 at 2.09.43 PM (1).jpeg" alt="Logo" class="logo-image">
+        </div>
+        <nav class="nav-links">
+            <a href="About.html">ABOUT</a>
+            <a href="Laswo_Homepage.html">HOME</a>
+            <a href="Servicereserved.html">SERVICES</a>
+            <a href="Laswophotos.html">PHOTOS</a>
+            <a href="Contactreserved.html">CONTACT</a>
+          
+            
+        </nav>
+    </div>
+
+    <!-- Main Section with Dynamic Background -->
+    <div class="main-content">
+        <div class="content-overlay">
+            <h1>Welcome to Laswo Studios</h1>
+            <p>We are a company dedicated to providing excellent services. Our team is passionate about delivering the best customer experience.
+            In a company, effective teamwork is the foundation of success together,
+            we create an environment where challenges are tackled collectively,
+            and solutions are born from diverse perspectives.
+            We find great satisfaction in knowing that the efforts our team put in work brings joy to our esteemed customers.
+            </p>
+            <br>
+            <p>
+                Laswo Studios stands out in the construction industry by integrating cutting-edge technology with traditional building expertise.
+                The company specializes in crafting durable, innovative, 
+                and aesthetically pleasing structures that meet both functional and creative demands. 
+                Whether it's residential complexes, commercial spaces, or specialized projects,
+                 Laswo Studios is known for its commitment to precision, sustainability, and client satisfaction.
+                  With a focus on minimizing environmental impact, 
+                  the company employs eco-friendly materials and energy-efficient designs, 
+                  setting a benchmark for modern construction practices.
+             The team at Laswo Studios consists of skilled professionals,
+ including architects, engineers, and project managers, who collaborate to bring visions to life. 
+ By maintaining open communication and fostering partnerships with clients, 
+ Laswo Studios ensures every project aligns with the client’s goals, timeline, and budget.
+  This personalized approach has earned the company a reputation for reliability, innovation, 
+  and excellence, making it a trusted partner for construction projects of any scale.
+            </p>
+        </div>
+    </div>
+  
+    <script>
+        // List of background images
+const backgrounds = [
+    '/home/jlong/Pictures/snaps/archit.jpeg', // First image
+    '/home/jlong/Pictures/snaps/WhatsApp Image 2024-09-17 at 1.14.05 PM.jpeg', // Add second image path here
+    '/home/jlong/Pictures/snaps/WhatsApp Image 2024-09-05 at 7.27.48 PM.jpeg'  // Add third image path here
+];
+
+// Change background every 2 minutes (120,000 ms)
+let currentBackgroundIndex = 0;
+const mainContent = document.querySelector('.main-content');
+
+function changeBackground() {
+    currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
+    mainContent.style.backgroundImage = `url(${backgrounds[currentBackgroundIndex]})`;
+}
+
+// Change background every 2 minutes
+setInterval(changeBackground, 1200);
+    </script>
+</body>
+</html>

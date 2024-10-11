@@ -1,0 +1,66 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+    
+}
+
+.logo-image {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-links a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Main Content with Dynamic Background */
+.main-content {
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/home/jlong/Pictures/snaps/Stylish One-Story House Design.jpeg'); /* Initial image */
+    transition: background-image 1s ease-in-out;
+}
+
+.content-overlay {
+    color: rgb(234, 240, 240);
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+}
